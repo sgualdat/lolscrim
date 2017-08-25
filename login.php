@@ -46,32 +46,22 @@
                         $usuario=$_POST['user'];
                         $password=$_POST['password'];
                         include("12e47baJKD93153mS0zBsD3sQVfC.php");
-                        $link = mysqli_connect("127.0.0.1","root","","atletismoboston");
-                        $resultado=$link->query("SELECT * FROM `administrador` WHERE `idAdministrador` = '$usuario'AND `password` = '$password'");
+                        $link = mysqli_connect("127.0.0.1","root","","lolscrim");
+                        $resultado=$link->query("SELECT * FROM `usuario` WHERE `email` = '$usuario'AND `password` = '$password'");
                         $filas=$resultado->num_rows;
                         if($filas==1){
                             $row=mysqli_fetch_array($resultado);
                             $clave=$row["clave_seguridad"];
                             $enlace=encriptar($usuario,$clave);
-                            header('Location: panel_administrador.php?encrypt='.$enlace);
+                            header('Location: panel_usuario.php?encrypt='.$enlace);
                         }
                         else{
-                            $resultado1=$link->query("SELECT * FROM `socios` WHERE `DNI` = '$usuario'AND `password`='$password'");
-                            $filas1=$resultado1->num_rows;
-                            if($filas1==1){
-                                $row1=mysqli_fetch_array($resultado1);
-                                $clave1=$row1["clave_seguridad"];
-                                $enlace1=encriptar($usuario,$clave1);
-                                header('Location: panel_usuario.php?encrypt='.$enlace1); 
-                            }
-                            else{
                                 ?>
                                <div class="alert alert-warning alert-dismissable">
                                   <strong>Has introducido mal el usuario/contraseña, vuelve a intentarlo</strong>
                                 </div>
                              <?php 
                             }
-                        }
 
                     }
 

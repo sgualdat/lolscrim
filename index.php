@@ -78,11 +78,13 @@
 							<!-- ============================================================= MAIN NAVIGATION ============================================================= -->
 							
 							<ul class="nav navbar-nav pull-right">
-							
+								
 								<li><a href="#product" class="scroll-to" data-anchor-offset="0">Product</a></li>
 								<li><a href="#visit-our-store" class="scroll-to" data-anchor-offset="0">Store</a></li>
 								<li><a href="#reasons" class="scroll-to" data-anchor-offset="0">Benefits</a></li>
-								<li><a href="#get-in-touch" class="scroll-to" data-anchor-offset="0">Contact</a></li>
+								<li><a href="#modal-registro" data-toggle="modal" data-anchor-offset="0">Registrarse</a></li>
+								<li><a href="login.php" data-anchor-offset="0">Acceso</a></li>
+								<li><a href="#get-in-touch" class="scroll-to" data-anchor-offset="0">Contacto</a></li>
 								
 							</ul><!-- /.nav -->
 							
@@ -101,6 +103,116 @@
 		
 		<main>
 			
+			<!-- ============================================================= MODAL Registro ============================================================= -->
+			
+			<div class="modal fade" id="modal-registro" tabindex="-1" role="dialog" aria-labelledby="modal-registro" aria-hidden="true">
+				<div class="modal-dialog modal-md">
+					<div class="modal-content">
+						
+						<div class="modal-header">
+							<center><h2 class="modal-title" id="modal-registro">Registro</h2></center>
+						</div><!-- /.modal-header -->
+						
+						<!-- ============================================================= MODAL CONTENT ============================================================= -->
+						
+						<div class="modal-body">
+							
+							<!-- ============================================================= SECTION – PORTFOLIO POST ============================================================= -->
+							
+							<section id="portfolio-post">
+								<div class="container inner-top-xs inner-bottom">
+									
+									<div class="row">
+										<div class="col-sm-12">
+											<form class="form-horizontal">
+											<fieldset>
+
+											<!-- Text input-->
+											<div class="form-group">
+											  <label class="col-md-4 control-label" for="nombre_equipo">Nombre del equipo</label>  
+											  <div class="col-md-4">
+											  <input id="nombre_equipo" name="nombre_equipo" type="text" placeholder="" class="form-control input-md" required="">
+											    
+											  </div>
+											</div>
+
+											<!-- Select Basic -->
+											<div class="form-group">
+											  <label class="col-md-4 control-label" for="elo">Division del equipo</label>
+											  <div class="col-md-4">
+											    <select id="elo" name="elo" class="form-control">
+											      <option value="Bronce">Bronce</option>
+											      <option value="Plata">Plata</option>
+											      <option value="Oro">Oro</option>
+											      <option value="Platino">Platino</option>
+											      <option value="Diamante">Diamante</option>
+											      <option value="Master">Master</option>
+											      <option value="Challenger">Challenger</option>
+											    </select>
+											  </div>
+											</div>
+
+											<!-- Text input-->
+											<div class="form-group">
+											  <label class="col-md-4 control-label" for="email">Email de contacto</label>  
+											  <div class="col-md-4">
+											  <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
+											    
+											  </div>
+											</div>
+
+											<!-- Password input-->
+											<div class="form-group">
+											  <label class="col-md-4 control-label" for="password">Contraseña</label>
+											  <div class="col-md-4">
+											    <input id="password" name="password" type="password" placeholder="" class="form-control input-md" required="">
+											    
+											  </div>
+											</div>
+
+											<!-- Password input-->
+											<div class="form-group">
+											  <label class="col-md-4 control-label" for="passwordconfirm">Confirmar contraseña</label>
+											  <div class="col-md-4">
+											    <input id="passwordconfirm" name="passwordconfirm" type="password" placeholder="" class="form-control input-md" required="">
+											    
+											  </div>
+											</div>
+
+											<!-- Button -->
+											<div class="form-group">
+											  <label class="col-md-4 control-label" for="registro"></label>
+											  <div class="col-md-4">
+											    <center><button id="registro" name="registro" class="btn btn-primary">Registrarse</button></center>
+											  </div>
+											</div>
+
+											</fieldset>
+											</form>
+										</div><!-- /.col -->
+									</div><!-- /.row -->
+									
+								</div><!-- /.container -->
+								
+							</section>
+							
+							<!-- ============================================================= SECTION – PORTFOLIO POST : END ============================================================= -->
+							
+						</div><!-- /.modal-body -->
+						
+						<!-- ============================================================= MODAL CONTENT : END ============================================================= -->
+						
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						</div><!-- /.modal-footer -->
+						
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+			
+			<!-- ============================================================= MODAL Registro : END ============================================================= -->
+
+
 			<!-- ============================================================= SECTION – HERO ============================================================= -->
 			
 			<section id="hero">
