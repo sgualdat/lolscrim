@@ -61,34 +61,6 @@
 
 <body>
 
-    <?php
-
-        function addNoticia($id){
-            $link = mysqli_connect("127.0.0.1","root","","atletismoboston");
-
-            //Recogida de valores
-            $idSocio=$id;
-            $titulo=$_POST["titulo"];
-            $noticia=$_POST["noticia"];
-
-            //Acceder a la base de datos
-            $resultado=$link->query("SELECT * FROM `noticias`");
-            $num_noticias = $resultado->num_rows;
-            $idnoticia=$num_noticias+1;
-
-            $link->query("INSERT INTO `noticias`(`idNoticias`,`Noticia`, `Titulo`, `Estado` , `Socios_idSocios`) VALUES ('$idnoticia','$noticia','$titulo','Activado','$idSocio')");
-
-            //Redireccionar
-            $temp=urlencode($_GET["encrypt"]);
-            ?>
-                  <script type=text/javascript> 
-                          window.location.href = 'panel_usuario.php?encrypt=<?php echo $temp;?>'; 
-                  </script>
-            <?php
-
-            }
-
-    ?>
 
     <div id="wrapper">
 
