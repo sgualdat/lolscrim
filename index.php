@@ -9,7 +9,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		
-		<title>Scrim League</title>
+		<title>Lol Scrim</title>
 		
 		<!-- Bootstrap Core CSS -->
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
