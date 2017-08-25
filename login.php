@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Lol Scrim</title>
+    <title>LOL Scrim</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
                 
                 <div class="panel panel-default" >
                     <div class="panel-heading">
-                        <div class="panel-title text-center">Scrim League</div>
+                        <div class="panel-title text-center">LOL Scrim</div>
                     </div>     
 
                     <div class="panel-body" >

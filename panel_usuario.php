@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Scrim League</title>
+    <title>LOL Scrim</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">

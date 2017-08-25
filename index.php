@@ -9,7 +9,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		
-		<title>Lol Scrim</title>
+		<title>LOL Scrim</title>
 		
 		<!-- Bootstrap Core CSS -->
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -39,6 +39,28 @@
 	</head>
 	
 	<body id="top">
+
+		<?php
+			function registrarEquipo(){
+
+				$password = $_POST['password'];
+				$passwordconfirm = $_POST['passwordconfirm'];
+
+				if (strcmp($password, $passwordconfirm) == 0) {
+					$nombre_equipo = $_POST['nombre_equipo'];
+					$elo = $_POST['elo'];
+					$email = $_POST['email'];
+					include("12e47baJKD93153mS0zBsD3sQVfC.php");
+                    $link = mysqli_connect("127.0.0.1","root","","lolscrim");
+                    $token = generaPass();
+                    $link->query("INSERT INTO `usuario`(`email`, `password`, `token`, `nombre_equipo`, `elo`) VALUES ('$email','$password','$token','$nombre_equipo','$elo')");
+				}
+				else{
+					//error no son iguales ambas contraseñas
+				}
+			}
+		?>
+
 		
 		<!-- ============================================================= HEADER ============================================================= -->
 		
@@ -124,7 +146,14 @@
 									
 									<div class="row">
 										<div class="col-sm-12">
-											<form class="form-horizontal">
+
+											<?php
+												if (isset($_POST['registro'])) {
+													registrarEquipo();
+												}
+											?>
+
+											<form class="form-horizontal" method="POST" action="">
 											<fieldset>
 
 											<!-- Text input-->
