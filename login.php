@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>LOL Scrim</title>
+    <title>OnlyScrim</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -31,12 +31,12 @@
             <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3"> 
                 
                 <div class="row" align="center" valign="center">                
-                      <img src="assets/images/logo.jpg"></img>
+                      <img src="assets/images/logo1.png"></img>
                 </div>
                 
                 <div class="panel panel-default" >
                     <div class="panel-heading">
-                        <div class="panel-title text-center">LOL Scrim</div>
+                        <div class="panel-title text-center">Acceso usuarios</div>
                     </div>     
 
                     <div class="panel-body" >

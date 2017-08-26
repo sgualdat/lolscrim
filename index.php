@@ -9,7 +9,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		
-		<title>LOL Scrim</title>
+		<title>OnlyScrim</title>
 		
 		<!-- Bootstrap Core CSS -->
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -78,7 +78,7 @@
 						
 						<!-- ============================================================= LOGO MOBILE ============================================================= -->
 						
-						<a class="navbar-brand" href="#"><img src="assets/images/logo.svg" class="logo" alt=""></a>
+						<a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="logo" alt=""></a>
 						
 						<!-- ============================================================= LOGO MOBILE : END ============================================================= -->
 						
@@ -93,7 +93,7 @@
 							
 							<!-- ============================================================= LOGO ============================================================= -->
 							
-							<a class="navbar-brand scroll-to" href="#top"><img src="assets/images/logo.svg" class="logo" alt=""></a>
+							<a class="navbar-brand scroll-to" href="#top"><img src="assets/images/logo.png"></a>
 							
 							<!-- ============================================================= LOGO : END ============================================================= -->
 							

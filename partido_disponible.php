@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>LOL Scrim</title>
+    <title>OnlyScrim</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -68,7 +68,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
-                <a class="navbar-brand"><img src="images/logo1.jpg"></img></a>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="assets/images/logo2.png"></img>
             </div>
             <!-- /.navbar-header -->
 
