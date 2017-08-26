@@ -102,12 +102,11 @@
 							
 							<ul class="nav navbar-nav pull-right">
 								
-								<li><a href="#product" class="scroll-to" data-anchor-offset="0">Product</a></li>
-								<li><a href="#visit-our-store" class="scroll-to" data-anchor-offset="0">Store</a></li>
-								<li><a href="#reasons" class="scroll-to" data-anchor-offset="0">Benefits</a></li>
+								<li><a href="#juegos" class="scroll-to" data-anchor-offset="0">Juegos</a></li>
+								<li><a href="#funcionamiento" class="scroll-to" data-anchor-offset="0">¿Como funciona?</a></li>
 								<li><a href="#modal-registro" data-toggle="modal" data-anchor-offset="0">Registrarse</a></li>
 								<li><a href="login.php" data-anchor-offset="0">Acceso</a></li>
-								<li><a href="#get-in-touch" class="scroll-to" data-anchor-offset="0">Contacto</a></li>
+								<li><a href="#contacto" class="scroll-to" data-anchor-offset="0">Contacto</a></li>
 								
 							</ul><!-- /.nav -->
 							
@@ -329,7 +328,7 @@
 			
 			<!-- ============================================================= SECTION – PRODUCT ============================================================= -->
 			
-			<section id="product">
+			<section id="juegos">
 				<div class="container inner">
 					
 					<div class="row">
@@ -403,14 +402,13 @@
 			
 			<!-- ============================================================= SECTION – REASONS ============================================================= -->
 			
-			<section id="reasons">
+			<section id="funcionamiento">
 				<div class="container inner">
 					
 					<div class="row">
 						<div class="col-md-8 col-sm-9 center-block text-center">
 							<header>
-								<h1>5 Reasons <br>why you should use our product</h1>
-								<p>Doloreiur quia commolu dolupta oreprerum tibusam.</p>
+								<h1>¿Como funciona?</h1>
 							</header>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
@@ -519,15 +517,14 @@
 			
 			<!-- ============================================================= SECTION – GET IN TOUCH ============================================================= -->
 			
-			<section id="get-in-touch" class="inner-bottom">
+			<section id="contacto" class="inner-bottom">
 				<div class="container inner light-bg">
 					<div class="row">
 						<div class="col-md-8 col-sm-9 center-block text-center">
 							<header>
-								<h1>Want to work with us?</h1>
-								<p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+								<h1>¿Quieres ponerte en contacto con nosotros?</h1>
 							</header>
-							<a href="#modal-contact01" class="btn btn-large" data-toggle="modal">Get in touch</a>
+							<a href="#modal-contact01" class="btn btn-large" data-toggle="modal">Contacto</a>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
 				</div><!-- /.container -->
@@ -539,111 +536,6 @@
 			<!-- ============================================================= MODALS ============================================================= -->
 			
 			
-			<!-- ============================================================= MODAL PRODUCT01 ============================================================= -->
-			
-			<div class="modal fade" id="modal-product01" tabindex="-1" role="dialog" aria-labelledby="modal-product01" aria-hidden="true">
-				<div class="modal-dialog modal-full">
-					<div class="modal-content dark-bg img-bg img-bg-softer no-modal-header no-modal-footer" style="background-image: url(assets/images/art/work14-lg.jpg);">
-						
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-cancel-1"></i></span></button>
-							<h4 class="modal-title" id="modal-product01">Product information</h4>
-						</div><!-- /.modal-header -->
-						
-						<!-- ============================================================= MODAL CONTENT ============================================================= -->
-						
-						<div class="modal-body">
-							
-							<!-- ============================================================= SECTION – PORTFOLIO POST ============================================================= -->
-							
-							<section id="portfolio-post">
-								<div class="container inner-top-sm inner-bottom">
-									
-									<div class="row">
-										<div class="col-sm-12">
-											<div class="video-container">
-												<iframe src="http://player.vimeo.com/video/44920080?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="1170" height="658" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-											</div>
-										</div><!-- /.col -->
-									</div><!-- /.row -->
-									
-									<div class="row inner-top-xs reset-xs">
-										
-										<div class="col-sm-7 inner-top-xs inner-right-xs">
-											<header>
-												<h2>Unleash your fingers</h2>
-												<p class="text-normal">Magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni labor. Laceaque quiae sitiorem rest non restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta oreprerum tibusam. Eumenis etus consent accullignis dentibea autem inisita posae volor conecus resto explabo.</p>
-												<p class="text-normal">Soloreiur qui commolu ptatemp dolupta oreprerum tibusam emnis et consent accullignis. Laceaque quiae sitiorem rest non restibusaes es tumquam core posae voloris remped modis doloreiur qui commolu dolupta oreprerum et consent.</p>
-											</header>
-										</div><!-- /.col -->
-										
-										<div class="col-sm-4 col-sm-offset-1 outer-top-xs inner-left-xs border-left">
-											<ul class="item-details">
-												<li class="date">June 12, 2015</li>
-												<li class="categories">Motion graphics</li>
-												<li class="client">Mobile company</li>
-												<li class="url"><a href="http://demo.fuviz.com/reen">demo.fuviz.com/reen</a></li>
-											</ul><!-- /.item-details -->
-										</div><!-- /.col -->
-										
-									</div><!-- /.row -->
-									
-								</div><!-- /.container -->
-								
-							</section>
-							
-							<!-- ============================================================= SECTION – PORTFOLIO POST : END ============================================================= -->
-							
-							
-							<!-- ============================================================= SECTION – SHARE ============================================================= -->
-							
-							<section id="share" class="light-bg">
-								<div class="container">
-									
-									<div class="col-sm-4 reset-padding">
-										<a href="#" class="btn-share-md">
-											<p class="name">Facebook</p>
-											<i class="icon-s-facebook"></i>
-											<p class="counter">1080</p>
-										</a>
-									</div><!-- /.col -->
-									
-									<div class="col-sm-4 reset-padding">
-										<a href="#" class="btn-share-md">
-											<p class="name">Twitter</p>
-											<i class="icon-s-twitter"></i>
-											<p class="counter">1263</p>
-										</a>
-									</div><!-- /.col -->
-									
-									<div class="col-sm-4 reset-padding">
-										<a href="#" class="btn-share-md">
-											<p class="name">Google +</p>
-											<i class="icon-s-gplus"></i>
-											<p class="counter">963</p>
-										</a>
-									</div><!-- /.col -->
-									
-								</div><!-- /.container -->
-							</section>
-							
-							<!-- ============================================================= SECTION – SHARE : END ============================================================= -->
-							
-						</div><!-- /.modal-body -->
-						
-						<!-- ============================================================= MODAL CONTENT : END ============================================================= -->
-						
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div><!-- /.modal-footer -->
-						
-					</div><!-- /.modal-content -->
-				</div><!-- /.modal-dialog -->
-			</div><!-- /.modal -->
-			
-			<!-- ============================================================= MODAL PRODUCT01 : END ============================================================= -->
-			
-			
 			<!-- ============================================================= MODAL CONTACT01 ============================================================= -->
 			
 			<div class="modal fade" id="modal-contact01" tabindex="-1" role="dialog" aria-labelledby="modal-contact01" aria-hidden="true">
@@ -652,7 +544,7 @@
 						
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-cancel-1"></i></span></button>
-							<h4 class="modal-title" id="modal-contact01">Get in touch</h4>
+							<center><h2 class="modal-title" id="modal-contact01">Formulario de contacto</h2></center>
 						</div><!-- /.modal-header -->
 						
 						<!-- ============================================================= MODAL CONTENT ============================================================= -->
@@ -663,15 +555,8 @@
 							
 							<section id="contact-form">
 								<div class="container inner-top-xs inner-bottom">
-									
-									<div class="row">
-										<div class="col-md-8 col-sm-9 center-block text-center">
-											<header>
-												<h1>Get in touch</h1>
-												<p>Do you want to know more? We’d love to hear from you!</p>
-											</header>
-										</div><!-- /.col -->
-									</div><!-- /.row -->
+
+									<center><img src="assets/images/logo2.png"></center>
 									
 									<div class="row">
 										<div class="col-sm-12">
@@ -679,35 +564,35 @@
 												
 												<div class="col-sm-6 outer-top-md inner-right-sm">
 													
-													<h2>Leave a Message</h2>
+													<h2>Deja tu mensaje</h2>
 													
 													<form id="contactform" class="forms" action="contact.php" method="post">
 														
 														<div class="row">
 															<div class="col-sm-6">
-																<input type="text" name="name" class="form-control" placeholder="Name (Required)">
+																<input type="text" name="name" class="form-control" placeholder="Nombre">
 															</div><!-- /.col -->
 														</div><!-- /.row -->
 														
 														<div class="row">
 															<div class="col-sm-6">
-																<input type="email" name="email" class="form-control" placeholder="Email (Required)">
+																<input type="email" name="email" class="form-control" placeholder="Email">
 															</div><!-- /.col -->
 														</div><!-- /.row -->
 														
 														<div class="row">
 															<div class="col-sm-6">
-																<input type="text" name="subject" class="form-control" placeholder="Subject">
+																<input type="text" name="subject" class="form-control" placeholder="Asunto">
 															</div><!-- /.col -->
 														</div><!-- /.row -->
 														
 														<div class="row">
 															<div class="col-sm-12">
-																<textarea name="message" class="form-control" placeholder="Enter your message ..."></textarea>
+																<textarea name="message" class="form-control" placeholder="Deja tu mensaje..."></textarea>
 															</div><!-- /.col -->
 														</div><!-- /.row -->
 														
-														<button type="submit" class="btn btn-default btn-submit">Submit message</button>
+														<button type="submit" class="btn btn-default btn-submit">Enviar</button>
 														
 													</form>
 													
@@ -717,13 +602,8 @@
 												
 												<div class="col-sm-6 outer-top-md inner-left-sm border-left">
 													
-													<h2>Contacts</h2>
-													<p>Magnis modipsae voloratati andigen daepeditem quiate re aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes.</p>
-													
-													<h3>REEN</h3>
+													<h3>OnlyScrim</h3>
 													<ul class="contacts">
-														<li><i class="icon-location contact"></i> 84 Street, City, State 24813</li>
-														<li><i class="icon-mobile contact"></i> +00 (123) 456 78 90</li>
 														<li><a href="mailto:info@reen.com"><i class="icon-mail-1 contact"></i> info@reen.com</a></li>
 													</ul><!-- /.contacts -->
 													
@@ -731,11 +611,7 @@
 														<h3>Social</h3>
 														<ul class="social">
 															<li><a href="#"><i class="icon-s-facebook"></i></a></li>
-															<li><a href="#"><i class="icon-s-gplus"></i></a></li>
 															<li><a href="#"><i class="icon-s-twitter"></i></a></li>
-															<li><a href="#"><i class="icon-s-pinterest"></i></a></li>
-															<li><a href="#"><i class="icon-s-behance"></i></a></li>
-															<li><a href="#"><i class="icon-s-dribbble"></i></a></li>
 														</ul><!-- /.social -->
 													</div><!-- /.social-network -->
 													
@@ -762,7 +638,7 @@
 						<!-- ============================================================= MODAL CONTENT : END ============================================================= -->
 						
 						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
 						</div><!-- /.modal-footer -->
 						
 					</div><!-- /.modal-content -->
