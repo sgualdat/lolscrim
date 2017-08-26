@@ -104,7 +104,7 @@
 								
 								<li><a href="#juegos" class="scroll-to" data-anchor-offset="0">Juegos</a></li>
 								<li><a href="#funcionamiento" class="scroll-to" data-anchor-offset="0">¿Como funciona?</a></li>
-								<li><a href="#modal-registro" data-toggle="modal" data-anchor-offset="0">Registrarse</a></li>
+								<!--<li><a href="#modal-registro" data-toggle="modal" data-anchor-offset="0">Registrarse</a></li>-->
 								<li><a href="login.php" data-anchor-offset="0">Acceso</a></li>
 								<li><a href="#contacto" class="scroll-to" data-anchor-offset="0">Contacto</a></li>
 								
@@ -347,7 +347,7 @@
 								<h1>Gestiona tus entrenamientos</h1>
 								<p>Prepara las competiciones para llegar al mas alto nivel</p>
 							</header>
-							<a href="#modal-registro" data-toggle="modal" class="btn btn-large">Registrate</a>
+							<!--<a href="#modal-registro" data-toggle="modal" class="btn btn-large">Registrate</a>-->
 						</div><!-- /.col -->
 					</div><!-- /.row -->
 					
@@ -375,11 +375,10 @@
 							<div class="tabs tabs-reasons tabs-circle-top tab-container">
 								
 								<ul class="etabs text-center">
-									<li class="tab"><a href="#tab-1"><div>1</div>Function</a></li>
-									<li class="tab"><a href="#tab-2"><div>2</div>Simplicity</a></li>
-									<li class="tab"><a href="#tab-3"><div>3</div>Design</a></li>
-									<li class="tab"><a href="#tab-4"><div>4</div>Social</a></li>
-									<li class="tab"><a href="#tab-5"><div>5</div>Community</a></li>
+									<li class="tab"><a href="#tab-1"><div>1</div>Registrate</a></li>
+									<li class="tab"><a href="#tab-2"><div>2</div>Busca un partido</a></li>
+									<li class="tab"><a href="#tab-3"><div>3</div>Juega</a></li>
+									<li class="tab"><a href="#tab-4"><div>4</div>Comprueba las estadisticas</a></li>
 								</ul><!-- /.etabs -->
 								
 								<div class="panel-container">
@@ -392,8 +391,8 @@
 											</div><!-- /.col -->
 											
 											<div class="col-md-5 col-md-pull-5 col-sm-6 col-sm-pull-6 inner-top-xs inner-right-xs">
-												<h3>Function</h3>
-												<p>Magnis modipsae que lib voloratati andigen daepedor quiate ut reporemni aut labor. Laceaque quiae sitiorem ut restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent accullignis lomnus.</p>
+												<h3>Registrate</h3>
+												<p>Rellena el formulario</p>
 											</div><!-- /.col -->
 											
 										</div><!-- /.row -->
@@ -407,7 +406,7 @@
 											</div><!-- /.col -->
 											
 											<div class="col-md-5 col-sm-6 inner-top-xs inner-left-xs">
-												<h3>Simplicity</h3>
+												<h3>Busca un partido</h3>
 												<p>Magnis modipsae que lib voloratati andigen daepedor quiate ut reporemni aut labor. Laceaque quiae sitiorem ut restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent accullignis lomnus.</p>
 											</div><!-- /.col -->
 											
@@ -422,7 +421,7 @@
 											</div><!-- /.col -->
 											
 											<div class="col-md-3 col-md-pull-4 col-sm-6 inner-top-xs">
-												<h3>Design</h3>
+												<h3>Juega</h3>
 												<p>Magnis modipsae lib voloratati andigen daepedor quiate aut labor. Laceaque quiae sitiorem resti est lore tumquam core posae volor uso remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent it accullignis orum lomnus.</p>
 											</div><!-- /.col -->
 											
@@ -444,20 +443,11 @@
 										
 										<div class="row">
 											<div class="col-sm-8 center-block text-center inner-top-xs">
-												<h3>Social</h3>
+												<h3>Estadisticas</h3>
 												<p>Magnis modipsae que lib voloratati andigen daepedor quiate ut reporemni aut labor. Laceaque sitiorem ut restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent accullignis lomnus.</p>
 											</div><!-- /.col -->
 										</div><!-- /.row -->
 										
-									</div><!-- /.tab-content -->
-									
-									<div class="tab-content" id="tab-5">
-										<div class="row">
-											<div class="col-md-8 col-sm-9 center-block text-center">
-												<h3>Community</h3>
-												<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni aut labor. Laceaque quiae sitiorem rest non restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta oreprerum tibusam emnis et consent accullignis.</p>
-											</div><!-- /.col -->
-										</div><!-- /.row -->
 									</div><!-- /.tab-content -->
 									 
 								</div><!-- /.panel-container -->
