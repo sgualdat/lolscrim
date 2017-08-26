@@ -133,7 +133,7 @@
 					<div class="modal-content">
 						
 						<div class="modal-header">
-							<center><h2 class="modal-title" id="modal-registro">Registro</h2></center>
+							<center><h2 class="modal-title" id="modal-registro">Formulario de registro</h2></center>
 						</div><!-- /.modal-header -->
 						
 						<!-- ============================================================= MODAL CONTENT ============================================================= -->
@@ -156,6 +156,9 @@
 
 											<form class="form-horizontal" method="POST" action="">
 											<fieldset>
+
+											<center><img src="assets/images/logo2.png"></center>
+											<br>
 
 											<!-- Text input-->
 											<div class="form-group">
