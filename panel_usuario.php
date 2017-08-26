@@ -39,24 +39,24 @@
 </head>
 
    <?php
-    /*//Control de Seguridad
+    //Control de Seguridad
     include("12e47baJKD93153mS0zBsD3sQVfC.php");
     if (empty($_GET['encrypt'])){
          header('Location: index.php'); 
               }
     else{
-    $encript1=urlencode($_GET["encrypt"]);
-    $encript=desencriptarSocio($encript1);
-    $link = mysqli_connect("127.0.0.1","root","","atletismoboston");
-    $resultado=$link->query("SELECT * FROM `socios` WHERE `DNI` = '$encript'");
+    $encript1=$_GET["encrypt"];
+    $encript=desencriptarUsuario($encript1);
+    $link = mysqli_connect("127.0.0.1","root","","lolscrim");
+    $resultado=$link->query("SELECT * FROM `usuario` WHERE `email` = '$encript'");
     $row=mysqli_fetch_array($resultado);
         if(empty($row)){
            header('Location: index.php');
         }
         else{
-        $idSocio=$row["idSocios"];
+        $email=$row["email"];
         }
-    }*/
+    }
     ?>
 
 <body>
@@ -73,8 +73,7 @@
 
             <div class="navbar-right" style="margin-right: 0">
                 <a class="navbar-brand">Bienvenido 
-                <?php printf ("%s\n", $row["Nombre"]);?>
-                <?php printf ("%s\n", $row["Apellidos"]);?>
+                <?php printf ("%s\n", $row["nombre_equipo"]);?>
                 </a>
             </div>
 

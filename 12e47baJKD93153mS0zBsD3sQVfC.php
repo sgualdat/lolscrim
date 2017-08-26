@@ -24,22 +24,20 @@
 
 	function encriptar ($input, $Key) {
         $output = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($Key), $input, MCRYPT_MODE_CBC, md5(md5($Key))));
-        $output1 = urlencode($output);
-        return $output1;
+        return $output;
     }
  
     function desencriptar ($input, $Key) {
-        $output=urldecode($input);
-        $output1 = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($Key), base64_decode($output), MCRYPT_MODE_CBC, md5(md5($Key))), "\0");
-        return $output1;
+        $output = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($Key), base64_decode($input), MCRYPT_MODE_CBC, md5(md5($Key))), "\0");
+        return $output;
     }
 
     function desencriptarUsuario($input) {
         $link = mysqli_connect("127.0.0.1","root","","lolscrim");
-        $resultado=$link->query("SELECT * FROM `usuario` WHERE `token` = '$input'");
+        $resultado=$link->query("SELECT * FROM `usuario` WHERE `input` = '$input'");
         $row=mysqli_fetch_array($resultado);
 
-        if($input==$row['token']){
+        if($input==$row['input']){
         	$Key=$row['token'];
         	$Email=desencriptar($input,$Key);
         	return $Email; 

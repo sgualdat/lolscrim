@@ -53,7 +53,8 @@
 					include("12e47baJKD93153mS0zBsD3sQVfC.php");
                     $link = mysqli_connect("127.0.0.1","root","","lolscrim");
                     $token = generaPass();
-                    $link->query("INSERT INTO `usuario`(`email`, `password`, `token`, `nombre_equipo`, `elo`) VALUES ('$email','$password','$token','$nombre_equipo','$elo')");
+                    $input = encriptar($email, $token);
+                    $link->query("INSERT INTO `usuario`(`email`, `password`, `token`, `nombre_equipo`, `elo`, `input`) VALUES ('$email','$password','$token','$nombre_equipo','$elo','$input')");
 				}
 				else{
 					//error no son iguales ambas contraseñas

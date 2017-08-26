@@ -51,7 +51,7 @@
                         $filas=$resultado->num_rows;
                         if($filas==1){
                             $row=mysqli_fetch_array($resultado);
-                            $clave=$row["clave_seguridad"];
+                            $clave=$row["token"];
                             $enlace=encriptar($usuario,$clave);
                             header('Location: panel_usuario.php?encrypt='.$enlace);
                         }
@@ -77,7 +77,7 @@
                            
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input id="user" type="text" class="form-control" name="user" value="" placeholder="Usuario">                                        
+                                <input id="user" type="text" class="form-control" name="user" value="" placeholder="Email">                                        
                             </div>
 
                             <div class="input-group">
