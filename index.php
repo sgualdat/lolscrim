@@ -29,7 +29,7 @@
 		<link href="assets/fonts/fontello.css" rel="stylesheet">
 		
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/images/favicon.ico">
+		<link rel="shortcut icon" href="assets/images/logo3.png">
 		
 		<!-- HTML5 elements and media queries Support for IE8 : HTML5 shim and Respond.js -->
 		<!--[if lt IE 9]>
@@ -250,71 +250,31 @@
 			<section id="hero">
 				<div id="owl-main" class="owl-carousel height-md owl-inner-nav owl-ui-lg">
 					
-					<div class="item" style="background-image: url(assets/images/art/slider01.jpg);">
+					<div class="item" style="background-image: url(assets/images/slide2.jpg);">
 						<div class="container">
-							<div class="caption vertical-center text-center">
+							<div class="caption vertical-bottom text-left">
 								
-								<h1 class="fadeInDown-1 light-color">Made for Designers</h1>
-								<p class="fadeInDown-2 medium-color">Create your online portfolio in minutes with the professionally and lovingly designed REEN website template. Customize your site with versatile and easy to use features.</p>
-								<div class="fadeInDown-3">
-									<a href="#" class="btn btn-large">Get started now</a>
-								</div><!-- /.fadeIn -->
+								<h1 class="fadeInDown-1 dark-bg light-color">Juega contra otros equipos totalmente gratuito</h1>
 								
 							</div><!-- /.caption -->
 						</div><!-- /.container -->
 					</div><!-- /.item -->
 					
-					<div class="item" style="background-image: url(assets/images/art/slider02.jpg);">
+					<div class="item" style="background-image: url(assets/images/slide1.png);">
 						<div class="container">
-							<div class="caption vertical-center text-right">
+							<div class="caption vertical-bottom text-left">
 								
-								<h1 class="fadeInLeft-1 light-color">Fresh and <br>beautiful design</h1>
-								<p class="fadeInLeft-2 light-color">REEN is designed to showcase your talent and put your work in the forefront. <br>Professionally use of typography and layout that fits your content.</p>
-								<div class="fadeInLeft-3">
-									<a href="#" class="btn btn-large">Get started now</a>
-								</div><!-- /.fadeIn -->
+								<h1 class="fadeInDown-1 dark-bg light-color">Organiza tus entrenamientos</h1>
 								
 							</div><!-- /.caption -->
 						</div><!-- /.container -->
 					</div><!-- /.item -->
 					
-					<div class="item" style="background-image: url(assets/images/art/slider03.jpg);">
+					<div class="item" style="background-image: url(assets/images/slide3.jpg);">
 						<div class="container">
-							<div class="caption vertical-center text-left">
+							<div class="caption vertical-top text-left">
 								
-								<h1 class="fadeInRight-1 dark-bg light-color"><span>Clean and <br>reusable code</span></h1>
-								<p class="fadeInRight-2 dark-color">The clean code allows you to easily copy code blocks from content <br>modules and past them in different places or layouts.</p>
-								<div class="fadeInRight-3">
-									<a href="#" class="btn btn-large">Get started now</a>
-								</div><!-- /.fadeIn -->
-								
-							</div><!-- /.caption -->
-						</div><!-- /.container -->
-					</div><!-- /.item -->
-					
-					<div class="item" style="background-image: url(assets/images/art/slider04.jpg);">
-						<div class="container">
-							<div class="caption vertical-top text-right">
-								
-								<h1 class="fadeIn-1 dark-bg light-color"><span>Just focus on <br>your creativity</span></h1>
-								<p class="fadeIn-2 light-color">Take a break from messing around with heavy coding and spend <br>your time brainstorming ideas for your next project.</p>
-								<div class="fadeIn-3">
-									<a href="#" class="btn btn-large">Get started now</a>
-								</div><!-- /.fadeIn -->
-								
-							</div><!-- /.caption -->
-						</div><!-- /.container -->
-					</div><!-- /.item -->
-					
-					<div class="item" style="background-image: url(assets/images/art/slider05.jpg);">
-						<div class="container">
-							<div class="caption vertical-top text-center">
-								
-								<h1 class="fadeInDown-1 light-color">Showcase <br>your content</h1>
-								<p class="fadeInDown-2 medium-color">With REEN you have the possibility to create websites for various <br>contents quickly and easily. Now it's up to you!</p>
-								<div class="fadeInDown-3">
-									<a href="#" class="btn btn-large">Get started now</a>
-								</div><!-- /.fadeIn -->
+								<h1 class="fadeInDown-1 light-color">Mejora tu rendimiento</h1>
 								
 							</div><!-- /.caption -->
 						</div><!-- /.container -->
@@ -331,47 +291,44 @@
 			<section id="juegos">
 				<div class="container inner">
 					
+					<center><h1>Juegos compatibles</h1></center>
+					<br>
+					<div class="container inner-bottom">
 					<div class="row">
-						
-						<div class="col-sm-6 inner-right-xs text-right">
-							<figure><a href="#modal-product01" data-toggle="modal"><img src="assets/images/art/product01.jpg" alt=""></a></figure>
+						<div class="col-sm-12 portfolio">
+							
+							<ul class="items col-3">
+								
+								<li class="item thumb interactive">
+									<a href="http://euw.leagueoflegends.com/es">
+										<figure>
+											<img src="assets/images/leagueoflegends.jpg" alt="">
+										</figure>
+									</a>
+								</li><!-- /.item -->
+								
+								<li class="item thumb identity">
+									<a href="http://blog.counter-strike.net/">
+										<figure>
+											<img src="assets/images/counterstrike.jpg" alt="">
+										</figure>
+									</a>
+								</li><!-- /.item -->
+								
+								<li class="item thumb identity">
+									<a href="https://www.playbattlegrounds.com/main.pu">
+										<figure>
+											<img src="assets/images/pub.jpg" alt="">
+										</figure>
+									</a>
+								</li><!-- /.item -->
+								
+								
+							</ul><!-- /.items -->
+							
 						</div><!-- /.col -->
-						
-						<div class="col-sm-6 inner-top-xs inner-left-xs">
-							<h2>Fully flexible user interface</h2>
-							<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni aut labor. Laceaque quiae sitiorem rest non restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta oreprerum tibusam. Eumenis et consent accullignis dentibea autem inisita posae volor conecus resto explabo.</p>
-							<a href="#modal-product01" class="txt-btn" data-toggle="modal">Check out the functions</a>
-						</div><!-- /.col -->
-						
 					</div><!-- /.row -->
-					
-					<div class="row inner-top-md">
-						
-						<div class="col-sm-6 col-sm-push-6 inner-left-xs">
-							<figure><a href="#modal-product01" data-toggle="modal"><img src="assets/images/art/product02.jpg" alt=""></a></figure>
-						</div><!-- /.col -->
-						
-						<div class="col-sm-6 col-sm-pull-6 inner-top-xs inner-right-xs">
-							<h2>Over 14,000 designs available</h2>
-							<p>Magnis modipsae que lib voloratati andigen daepeditem quiate es reporemus aut labor. Laceaque quiae sitiorem rest non restibusaes dem tumquam core posae volor remped modis volor. Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis lib dentibea autem inisita. Conecus iure posae volor remped modis aut accabora incim resto explabo eictemperum quiae sitiorem.</p>
-							<a href="#modal-product01" class="txt-btn" data-toggle="modal">Visit the showroom</a>
-						</div><!-- /.col -->
-						
-					</div><!-- /.row -->
-					
-					<div class="row inner-top-md">
-						
-						<div class="col-sm-6 inner-right-xs text-right">
-							<figure><a href="#modal-product01" data-toggle="modal"><img src="assets/images/art/product03.jpg" alt=""></a></figure>
-						</div><!-- /.col -->
-						
-						<div class="col-sm-6 inner-top-xs inner-left-xs">
-							<h2>Social media made even easier</h2>
-							<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni aut labor. Laceaque quiae sitiorem rest non restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta oreprerum tibusam emnis et consent accullignis.</p>
-							<a href="#modal-product01" class="txt-btn" data-toggle="modal">Learn more about it</a>
-						</div><!-- /.col -->
-						
-					</div><!-- /.row -->
+				</div><!-- /.container -->
 				
 				</div><!-- /.container -->
 			</section>
@@ -387,10 +344,10 @@
 					<div class="row">
 						<div class="col-md-8 col-sm-9">
 							<header>
-								<h1>Customize your own model</h1>
-								<p>Magnis modipsae que voloratati andigen daepeditem quiate conecus aut labore. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam explabo.</p>
+								<h1>Gestiona tus entrenamientos</h1>
+								<p>Prepara las competiciones para llegar al mas alto nivel</p>
 							</header>
-							<a href="#" class="btn btn-large">Visit our store</a>
+							<a href="#modal-registro" data-toggle="modal" class="btn btn-large">Registrate</a>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
 					
@@ -596,15 +553,13 @@
 														
 													</form>
 													
-													<div id="response"></div>
-													
 												</div><!-- ./col -->
 												
 												<div class="col-sm-6 outer-top-md inner-left-sm border-left">
 													
 													<h3>OnlyScrim</h3>
 													<ul class="contacts">
-														<li><a href="mailto:info@reen.com"><i class="icon-mail-1 contact"></i> info@reen.com</a></li>
+														<li><a href="mailto:onlyscrim@gmail.com"><i class="icon-mail-1 contact"></i> onlyscrim@gmail.com</a></li>
 													</ul><!-- /.contacts -->
 													
 													<div class="social-network">
@@ -625,13 +580,6 @@
 							</section>
 							
 							<!-- ============================================================= SECTION – CONTACT FORM : END ============================================================= -->
-							
-							
-							<!-- ============================================================= SECTION – MAP ============================================================= -->
-							
-							<section id="map" class="height-sm"></section>
-							
-							<!-- ============================================================= SECTION – MAP : END ============================================================= -->
 							
 						</div><!-- /.modal-body -->
 						
@@ -661,13 +609,7 @@
 		  
 			<div class="footer-bottom">
 				<div class="container inner">
-					<p class="pull-left">© 2015 REEN. All rights reserved.</p>
-					<ul class="footer-menu pull-right">
-						<li><a href="#product" class="scroll-to">Product</a></li>
-						<li><a href="#visit-our-store" class="scroll-to">Store</a></li>
-						<li><a href="#reasons" class="scroll-to">Benefits</a></li>
-						<li><a href="#get-in-touch" class="scroll-to">Contact</a></li>
-					</ul><!-- .footer-menu -->
+					<p class="pull-left">© 2017 OnlyScrim. Todos los derechos reservados.</p>
 				</div><!-- .container -->
 			</div><!-- .footer-bottom -->
 		</footer>
