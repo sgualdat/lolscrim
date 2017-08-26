@@ -53,7 +53,7 @@
                             $row=mysqli_fetch_array($resultado);
                             $clave=$row["token"];
                             $enlace=encriptar($usuario,$clave);
-                            header('Location: panel_usuario.php?encrypt='.$enlace);
+                            header('Location: agenda.php?encrypt='.$enlace);
                         }
                         else{
                                 ?>
