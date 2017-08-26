@@ -90,14 +90,14 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="partido_disponible.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-sign-in fa-fw"></i> Solicitar partido<span class="fa arrow"></span></a>
+                            <a href="solicitar_partido.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-sign-in fa-fw"></i> Solicitar partido<span class="fa arrow"></span></a>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="cuotas_socio.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-calendar-o fa-fw"></i> Partidos disponibles<span class="fa arrow"></a>
+                            <a href="partido_disponible.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-calendar-o fa-fw"></i> Partidos disponibles<span class="fa arrow"></a>
                         </li>
                         <li>
-                            <a href="ajuste_usuario.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-wrench fa-fw"></i> Ajustes<span class="fa arrow"></span></a>
+                            <a href="ajustes.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-wrench fa-fw"></i> Ajustes<span class="fa arrow"></span></a>
                             <!-- /.nav-second-level -->
                         </li>
                     </ul>

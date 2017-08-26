@@ -90,14 +90,14 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="partido_disponible.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-sign-in fa-fw"></i> Solicitar partido<span class="fa arrow"></span></a>
+                            <a href="solicitar_partido.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-sign-in fa-fw"></i> Solicitar partido<span class="fa arrow"></span></a>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="cuotas_socio.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-calendar-o fa-fw"></i> Partidos disponibles<span class="fa arrow"></a>
+                            <a href="partido_disponible.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-calendar-o fa-fw"></i> Partidos disponibles<span class="fa arrow"></a>
                         </li>
                         <li>
-                            <a href="ajuste_usuario.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-wrench fa-fw"></i> Ajustes<span class="fa arrow"></span></a>
+                            <a href="ajustes.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-wrench fa-fw"></i> Ajustes<span class="fa arrow"></span></a>
                             <!-- /.nav-second-level -->
                         </li>
                     </ul>
@@ -108,41 +108,12 @@
         </nav>
 
         <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                <div class="panel panel-default">
-                        <div class="panel-heading">
-                             <h3><i class="fa fa-calendar fa-fw"></i> Partidos por celebrar</h3>
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-
-                            <table class="table table-striped custab">
-                                <thead>
-
-                                    <tr>
-                                        <th>Hora</th>
-                                        <th>Fecha</th>
-                                        <th>Equipo</th>
-                                        <th>Formato</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                            
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-
-                </div>
-                <!-- /.col-lg-8 -->
-
-            </div>
 
             <div class="row">
                 <div class="col-lg-12">
                 <div class="panel panel-default">
                         <div class="panel-heading">
-                             <h3><i class="fa fa-calendar fa-fw"></i> Partidos celebrados</h3>
+                             <h3><i class="fa fa-calendar fa-fw"></i> Propuestas de partidos</h3>
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">

@@ -112,54 +112,80 @@
                 <div class="col-lg-12">
                 <div class="panel panel-default">
                         <div class="panel-heading">
-                             <h3><i class="fa fa-calendar fa-fw"></i> Partidos por celebrar</h3>
+                             <h3><i class="fa fa-calendar fa-fw"></i> Proponer partido</h3>
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
 
-                            <table class="table table-striped custab">
-                                <thead>
+                            <form class="form-horizontal">
+                            <fieldset>
 
-                                    <tr>
-                                        <th>Hora</th>
-                                        <th>Fecha</th>
-                                        <th>Equipo</th>
-                                        <th>Formato</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                            
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
+                            <!-- Text input-->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="fecha">Fecha</label>  
+                              <div class="col-md-4">
+                              <input id="fecha" name="fecha" type="date" placeholder="" class="form-control input-md" required="">
+                                
+                              </div>
+                            </div>
 
-                </div>
-                <!-- /.col-lg-8 -->
+                            <!-- Text input-->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="hora">Hora</label>  
+                              <div class="col-md-4">
+                              <input id="hora" name="hora" type="time" placeholder="" class="form-control input-md" required="">
+                                
+                              </div>
+                            </div>
 
-            </div>
+                            <!-- Text input-->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="cuenta">Cuenta de contacto (LOL)</label>  
+                              <div class="col-md-4">
+                              <input id="cuenta" name="cuenta" type="text" placeholder="" class="form-control input-md" required="">
+                                
+                              </div>
+                            </div>
 
-            <div class="row">
-                <div class="col-lg-12">
-                <div class="panel panel-default">
-                        <div class="panel-heading">
-                             <h3><i class="fa fa-calendar fa-fw"></i> Partidos celebrados</h3>
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
+                            <!-- Select Basic -->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="elo">Elo</label>
+                              <div class="col-md-4">
+                                <select id="elo" name="elo" class="form-control">
+                                      <option value="Bronce">Bronce</option>
+                                      <option value="Plata">Plata</option>
+                                      <option value="Oro">Oro</option>
+                                      <option value="Platino">Platino</option>
+                                      <option value="Diamante">Diamante</option>
+                                      <option value="Master">Master</option>
+                                      <option value="Challenger">Challenger</option>
+                                </select>
+                              </div>
+                            </div>
 
-                            <!-- Introducir buscador -->
+                            <!-- Select Basic -->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="formato">Formato</label>
+                              <div class="col-md-4">
+                                <select id="formato" name="formato" class="form-control">
+                                  <option value="BO1">BO1</option>
+                                  <option value="BO3">BO3</option>
+                                  <option value="BO5">BO5</option>
+                                </select>
+                              </div>
+                            </div>
 
-                            <table class="table table-striped custab">
-                                <thead>
+                            <!-- Button -->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="aceptar"></label>
+                              <div class="col-md-4">
+                                <center><button id="aceptar" name="aceptar" class="btn btn-primary">Aceptar</button></center>
+                              </div>
+                            </div>
 
-                                    <tr>
-                                        <th>Hora</th>
-                                        <th>Fecha</th>
-                                        <th>Equipo</th>
-                                        <th>Formato</th>
-                                    </tr>
-                                </thead>
-                            </table>
+                            </fieldset>
+                            </form>
+
                             
                         </div>
                         <!-- /.panel-body -->
