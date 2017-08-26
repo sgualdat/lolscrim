@@ -111,6 +111,7 @@
 
             <div class="row">
                 <div class="col-lg-12">
+                <br>
                 <div class="panel panel-default">
                         <div class="panel-heading">
                              <h3><i class="fa fa-calendar fa-fw"></i> Propuestas de partidos</h3>

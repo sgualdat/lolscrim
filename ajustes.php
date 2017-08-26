@@ -113,7 +113,7 @@
                 <br>
                 <div class="panel panel-default">
                         <div class="panel-heading">
-                             <h3><i class="fa fa-calendar fa-fw"></i> Proponer partido</h3>
+                             <h3><i class="fa fa-calendar fa-fw"></i> Ajustes</h3>
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
