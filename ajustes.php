@@ -113,79 +113,58 @@
                 <br>
                 <div class="panel panel-default">
                         <div class="panel-heading">
-                             <h3><i class="fa fa-calendar fa-fw"></i> Ajustes</h3>
+                             <h3><i class="fa fa-calendar fa-fw"></i> Información personal</h3>
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
 
-                            <form class="form-horizontal">
-                            <fieldset>
+                        <form class="form-horizontal" method="POST" action="">
+                        <fieldset>
 
-                            <!-- Text input-->
-                            <div class="form-group">
-                              <label class="col-md-4 control-label" for="fecha">Fecha</label>  
-                              <div class="col-md-4">
-                              <input id="fecha" name="fecha" type="date" placeholder="" class="form-control input-md" required="">
-                                
-                              </div>
-                            </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="nombre_equipo">Nombre del equipo</label>  
+                          <div class="col-md-4">
+                          <input id="nombre_equipo" name="nombre_equipo" type="text" placeholder="" class="form-control input-md" required="">
+                            
+                          </div>
+                        </div>
 
-                            <!-- Text input-->
-                            <div class="form-group">
-                              <label class="col-md-4 control-label" for="hora">Hora</label>  
-                              <div class="col-md-4">
-                              <input id="hora" name="hora" type="time" placeholder="" class="form-control input-md" required="">
-                                
-                              </div>
-                            </div>
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="elo">Division del equipo</label>
+                          <div class="col-md-4">
+                            <select id="elo" name="elo" class="form-control">
+                              <option value="Bronce">Bronce</option>
+                              <option value="Plata">Plata</option>
+                              <option value="Oro">Oro</option>
+                              <option value="Platino">Platino</option>
+                              <option value="Diamante">Diamante</option>
+                              <option value="Master">Master</option>
+                              <option value="Challenger">Challenger</option>
+                            </select>
+                          </div>
+                        </div>
 
-                            <!-- Text input-->
-                            <div class="form-group">
-                              <label class="col-md-4 control-label" for="cuenta">Cuenta de contacto (LOL)</label>  
-                              <div class="col-md-4">
-                              <input id="cuenta" name="cuenta" type="text" placeholder="" class="form-control input-md" required="">
-                                
-                              </div>
-                            </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="email">Email de contacto</label>  
+                          <div class="col-md-4">
+                          <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
+                            
+                          </div>
+                        </div>
 
-                            <!-- Select Basic -->
-                            <div class="form-group">
-                              <label class="col-md-4 control-label" for="elo">Elo</label>
-                              <div class="col-md-4">
-                                <select id="elo" name="elo" class="form-control">
-                                      <option value="Bronce">Bronce</option>
-                                      <option value="Plata">Plata</option>
-                                      <option value="Oro">Oro</option>
-                                      <option value="Platino">Platino</option>
-                                      <option value="Diamante">Diamante</option>
-                                      <option value="Master">Master</option>
-                                      <option value="Challenger">Challenger</option>
-                                </select>
-                              </div>
-                            </div>
+                        <!-- Button -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="modificardatos"></label>
+                          <div class="col-md-4">
+                            <center><button id="modificardatos" name="modificardatos" class="btn btn-primary">Modificar datos</button></center>
+                          </div>
+                        </div>
 
-                            <!-- Select Basic -->
-                            <div class="form-group">
-                              <label class="col-md-4 control-label" for="formato">Formato</label>
-                              <div class="col-md-4">
-                                <select id="formato" name="formato" class="form-control">
-                                  <option value="BO1">BO1</option>
-                                  <option value="BO3">BO3</option>
-                                  <option value="BO5">BO5</option>
-                                </select>
-                              </div>
-                            </div>
-
-                            <!-- Button -->
-                            <div class="form-group">
-                              <label class="col-md-4 control-label" for="aceptar"></label>
-                              <div class="col-md-4">
-                                <center><button id="aceptar" name="aceptar" class="btn btn-primary">Aceptar</button></center>
-                              </div>
-                            </div>
-
-                            </fieldset>
-                            </form>
+                        </fieldset>
+                        </form>
 
                             
                         </div>
@@ -197,6 +176,58 @@
 
             </div>
             <!-- /.row -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                <br>
+                <div class="panel panel-default">
+                        <div class="panel-heading">
+                             <h3><i class="fa fa-calendar fa-fw"></i> Modificar contraseña</h3>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+
+                        <form class="form-horizontal" method="POST" action="">
+                        <fieldset>
+
+                        <!-- Password input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="password">Contraseña</label>
+                          <div class="col-md-4">
+                            <input id="password" name="password" type="password" placeholder="" class="form-control input-md" required="">
+                            
+                          </div>
+                        </div>
+
+                        <!-- Password input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="passwordconfirm">Confirmar contraseña</label>
+                          <div class="col-md-4">
+                            <input id="passwordconfirm" name="passwordconfirm" type="password" placeholder="" class="form-control input-md" required="">
+                            
+                          </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="changepassword"></label>
+                          <div class="col-md-4">
+                            <center><button id="changepassword" name="changepassword" class="btn btn-primary">Cambiar contraseña</button></center>
+                          </div>
+                        </div>
+
+                        </fieldset>
+                        </form>
+
+                            
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+
+                </div>
+                <!-- /.col-lg-8 -->
+
+            </div>
         </div>
         <!-- /#page-wrapper -->
 

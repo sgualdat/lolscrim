@@ -102,7 +102,7 @@
 							
 							<ul class="nav navbar-nav pull-right">
 								
-								<li><a href="#juegos" class="scroll-to" data-anchor-offset="0">Juegos</a></li>
+								<li><a href="#about" class="scroll-to" data-anchor-offset="0">¿Que es OnlyScrim?</a></li>
 								<li><a href="#funcionamiento" class="scroll-to" data-anchor-offset="0">¿Como funciona?</a></li>
 								<!--<li><a href="#modal-registro" data-toggle="modal" data-anchor-offset="0">Registrarse</a></li>-->
 								<li><a href="login.php" data-anchor-offset="0">Acceso</a></li>
@@ -288,47 +288,27 @@
 			
 			<!-- ============================================================= SECTION – PRODUCT ============================================================= -->
 			
-			<section id="juegos">
+			<section id="about">
 				<div class="container inner">
-					
-					<center><h1>Juegos compatibles</h1></center>
-					<br>
-					<div class="container inner-bottom">
+
 					<div class="row">
 						<div class="col-sm-12 portfolio">
 							
-							<ul class="items col-3">
+							<div class="row">
+						
+								<div class="col-sm-6 inner-right-xs text-right">
+									<figure><img src="assets/images/leagueoflegends.png" alt=""></figure>
+								</div><!-- /.col -->
 								
-								<li class="item thumb interactive">
-									<a href="http://euw.leagueoflegends.com/es">
-										<figure>
-											<img src="assets/images/leagueoflegends.jpg" alt="">
-										</figure>
-									</a>
-								</li><!-- /.item -->
+								<div class="col-sm-6 inner-top-xs inner-left-xs">
+									<h2>¿Que es OnlyScrim?</h2>
+									<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni aut labor. Laceaque quiae sitiorem rest non restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta oreprerum tibusam. Eumenis et consent accullignis dentibea autem inisita posae volor conecus resto explabo.</p>
+								</div><!-- /.col -->
 								
-								<li class="item thumb identity">
-									<a href="http://blog.counter-strike.net/">
-										<figure>
-											<img src="assets/images/counterstrike.jpg" alt="">
-										</figure>
-									</a>
-								</li><!-- /.item -->
-								
-								<li class="item thumb identity">
-									<a href="https://www.playbattlegrounds.com/main.pu">
-										<figure>
-											<img src="assets/images/pub.jpg" alt="">
-										</figure>
-									</a>
-								</li><!-- /.item -->
-								
-								
-							</ul><!-- /.items -->
+							</div><!-- /.row -->
 							
 						</div><!-- /.col -->
 					</div><!-- /.row -->
-				</div><!-- /.container -->
 				
 				</div><!-- /.container -->
 			</section>
@@ -345,7 +325,7 @@
 						<div class="col-md-8 col-sm-9">
 							<header>
 								<h1>Gestiona tus entrenamientos</h1>
-								<p>Prepara las competiciones para llegar al mas alto nivel</p>
+								<p>Comprueba las estadisticas despues de cada partido y prepara las competiciones para llegar al mas alto nivel</p>
 							</header>
 							<!--<a href="#modal-registro" data-toggle="modal" class="btn btn-large">Registrate</a>-->
 						</div><!-- /.col -->
@@ -378,7 +358,6 @@
 									<li class="tab"><a href="#tab-1"><div>1</div>Registrate</a></li>
 									<li class="tab"><a href="#tab-2"><div>2</div>Busca un partido</a></li>
 									<li class="tab"><a href="#tab-3"><div>3</div>Juega</a></li>
-									<li class="tab"><a href="#tab-4"><div>4</div>Comprueba las estadisticas</a></li>
 								</ul><!-- /.etabs -->
 								
 								<div class="panel-container">
@@ -431,23 +410,6 @@
 											</div><!-- /.col -->
 											
 										</div><!-- /.row -->
-									</div><!-- /.tab-content -->
-									
-									<div class="tab-content" id="tab-4">
-										
-										<div class="row">
-											<div class="col-md-5 col-sm-6 col-xs-8 center-block text-center">
-												<figure><img src="assets/images/art/product03.jpg" alt=""></figure>
-											</div><!-- /.col -->
-										</div><!-- /.row -->
-										
-										<div class="row">
-											<div class="col-sm-8 center-block text-center inner-top-xs">
-												<h3>Estadisticas</h3>
-												<p>Magnis modipsae que lib voloratati andigen daepedor quiate ut reporemni aut labor. Laceaque sitiorem ut restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent accullignis lomnus.</p>
-											</div><!-- /.col -->
-										</div><!-- /.row -->
-										
 									</div><!-- /.tab-content -->
 									 
 								</div><!-- /.panel-container -->
