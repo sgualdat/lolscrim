@@ -33,7 +33,7 @@
     }
 
     function desencriptarUsuario($input) {
-        $link = mysqli_connect("127.0.0.1","root","","lolscrim");
+        $link = mysqli_connect("127.0.0.1","root","","db696349657");
         $resultado=$link->query("SELECT * FROM `usuario` WHERE `input` = '$input'");
         $row=mysqli_fetch_array($resultado);
 

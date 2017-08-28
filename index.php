@@ -51,13 +51,29 @@
 					$elo = $_POST['elo'];
 					$email = $_POST['email'];
 					include("12e47baJKD93153mS0zBsD3sQVfC.php");
-                    $link = mysqli_connect("127.0.0.1","root","","lolscrim");
+                    $link = mysqli_connect("127.0.0.1","root","","db696349657");
                     $token = generaPass();
                     $input = encriptar($email, $token);
-                    $link->query("INSERT INTO `usuario`(`email`, `password`, `token`, `nombre_equipo`, `elo`, `input`) VALUES ('$email','$password','$token','$nombre_equipo','$elo','$input')");
+                    $enlaceImagen = "probando";
+                    $resultado = $link->query("SELECT * FROM `usuario` WHERE `email` = '$email' OR `nombre_equipo`= '$nombre_equipo'");
+                    $filas=$resultado->num_rows;
+                    if ($filas==0) {
+                    $link->query("INSERT INTO `usuario`(`email`, `password`, `token`, `nombre_equipo`, `elo`, `input`, `logo_equipo`, `verificado`) VALUES ('$email','$password','$token','$nombre_equipo','$elo','$input','$enlaceImagen','0')");
+                    }
+                    else{
+                    	?>
+                            <div class="alert alert-warning alert-dismissable">
+                               <strong>El usuario o el equipo ya existen</strong>
+                            </div>
+                        <?php 
+                    }
 				}
 				else{
-					//error no son iguales ambas contraseñas
+					?>
+                         <div class="alert alert-warning alert-dismissable">
+                            <strong>Las contraseñas no coinciden</strong>
+                         </div>
+                    <?php 
 				}
 			}
 		?>
@@ -104,7 +120,7 @@
 								
 								<li><a href="#about" class="scroll-to" data-anchor-offset="0">¿Que es OnlyScrim?</a></li>
 								<li><a href="#funcionamiento" class="scroll-to" data-anchor-offset="0">¿Como funciona?</a></li>
-								<!--<li><a href="#modal-registro" data-toggle="modal" data-anchor-offset="0">Registrarse</a></li>-->
+								<li><a href="#modal-registro" data-toggle="modal" data-anchor-offset="0">Registrarse</a></li>
 								<li><a href="login.php" data-anchor-offset="0">Acceso</a></li>
 								<li><a href="#contacto" class="scroll-to" data-anchor-offset="0">Contacto</a></li>
 								

@@ -48,7 +48,7 @@
     else{
     $encript1=$_GET["encrypt"];
     $encript=desencriptarUsuario($encript1);
-    $link = mysqli_connect("127.0.0.1","root","","lolscrim");
+    $link = mysqli_connect("127.0.0.1","root","","db696349657");
     $resultado=$link->query("SELECT * FROM `usuario` WHERE `email` = '$encript'");
     $row=mysqli_fetch_array($resultado);
         if(empty($row)){
@@ -98,6 +98,10 @@
                         </li>
                         <li>
                             <a href="ajustes.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-wrench fa-fw"></i> Ajustes<span class="fa arrow"></span></a>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="index.php"><i class="fa fa-wrench fa-fw"></i> Cerrar sesion<span class="fa arrow"></span></a>
                             <!-- /.nav-second-level -->
                         </li>
                     </ul>

@@ -46,14 +46,23 @@
                         $usuario=$_POST['user'];
                         $password=$_POST['password'];
                         include("12e47baJKD93153mS0zBsD3sQVfC.php");
-                        $link = mysqli_connect("127.0.0.1","root","","lolscrim");
+                        $link = mysqli_connect("127.0.0.1","root","","db696349657");
                         $resultado=$link->query("SELECT * FROM `usuario` WHERE `email` = '$usuario'AND `password` = '$password'");
                         $filas=$resultado->num_rows;
                         if($filas==1){
                             $row=mysqli_fetch_array($resultado);
-                            $clave=$row["token"];
-                            $enlace=encriptar($usuario,$clave);
-                            header('Location: agenda.php?encrypt='.$enlace);
+                            if ($row["verificado"] == 1) {
+                                $clave=$row["token"];
+                                $enlace=encriptar($usuario,$clave);
+                                header('Location: agenda.php?encrypt='.$enlace);
+                            }
+                            else{
+                                ?>
+                               <div class="alert alert-warning alert-dismissable">
+                                  <strong>No has verificado tu usuario</strong>
+                                </div>
+                             <?php 
+                            }
                         }
                         else{
                                 ?>
