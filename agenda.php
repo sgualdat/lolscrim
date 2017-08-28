@@ -43,7 +43,7 @@
     //Control de Seguridad
     include("12e47baJKD93153mS0zBsD3sQVfC.php");
     if (empty($_GET['encrypt'])){
-         header('Location: index.php'); 
+         //header('Location: index.php'); 
               }
     else{
     $encript1=$_GET["encrypt"];
@@ -52,7 +52,7 @@
     $resultado=$link->query("SELECT * FROM `usuario` WHERE `email` = '$encript'");
     $row=mysqli_fetch_array($resultado);
         if(empty($row)){
-           header('Location: index.php');
+          // header('Location: index.php');
         }
         else{
         $email=$row["email"];
@@ -101,7 +101,7 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="index.php"><i class="fa fa-wrench fa-fw"></i> Cerrar sesion<span class="fa arrow"></span></a>
+                            <a href="index.php"><i class="fa fa-sign-out fa-fw"></i> Cerrar sesion<span class="fa arrow"></span></a>
                             <!-- /.nav-second-level -->
                         </li>
                     </ul>

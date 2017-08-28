@@ -28,6 +28,7 @@
 
     <!-- Custom Fonts -->
     <link href="assets/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="assets/images/logo3.png">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,6 +62,23 @@
     ?>
 
 <body>
+
+    <?php
+
+      function registrarPartido(){
+
+        $fecha = $_POST["fecha"];
+        $hora = $_POST["hora"];
+        $cuenta_contacto = $_POST["cuenta"];
+        $elo = $_POST["elo"];
+        $formato = $_POST["formato"];
+
+        $link->query("INSERT INTO `agenda`(`hora`, `fecha`, `elo`, `formato`, `estado`, `cuenta_contacto`) VALUES ('$hora','$fecha','$elo','$formato','PENDIENTE','$cuenta_contacto')");
+
+      }
+
+
+    ?>
 
 
     <div id="wrapper">
@@ -118,7 +136,13 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body">
 
-                            <form class="form-horizontal">
+                            <?php
+                                if(isset($_POST['aceptar'])){
+                                    registrarPartido();
+                                    }
+                            ?>
+
+                            <form class="form-horizontal" method="POST" action="">
                             <fieldset>
 
                             <!-- Text input-->

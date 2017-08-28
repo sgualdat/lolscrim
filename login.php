@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="assets/css/inicio.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="assets/images/logo3.png">
 
     <!-- Fonts -->
     <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -47,7 +48,7 @@
                         $password=$_POST['password'];
                         include("12e47baJKD93153mS0zBsD3sQVfC.php");
                         $link = mysqli_connect("127.0.0.1","root","","db696349657");
-                        $resultado=$link->query("SELECT * FROM `usuario` WHERE `email` = '$usuario'AND `password` = '$password'");
+                        $resultado=$link->query("SELECT * FROM `usuario` WHERE `email` = '$usuario' AND `password` = '$password'");
                         $filas=$resultado->num_rows;
                         if($filas==1){
                             $row=mysqli_fetch_array($resultado);
