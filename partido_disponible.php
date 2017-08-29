@@ -56,6 +56,7 @@
         }
         else{
         $email=$row["email"];
+        $idEquipo=$row["idusuario"];
         }
     }
     ?>
@@ -127,9 +128,11 @@
 
                             <?php
 
-                             $link = mysqli_connect("127.0.0.1","root","","db696349657");
-                             $resultado=$link->query("SELECT * FROM `agenda` WHERE `fecha` AND `hora` AND `estado` == 'PENDIENTE'");
+                             $hoy = date("y-m-d");
+                             $hora = date("H:i:s");
 
+                             $link = mysqli_connect("127.0.0.1","root","","db696349657");
+                             $resultado=$link->query("SELECT * FROM `agenda` WHERE `fecha`>='$hoy' AND `hora`>='$hora' AND `estado` = 'PENDIENTE'");
                             ?>
 
                             <table class="table table-striped custab">
@@ -139,7 +142,31 @@
                                         <th>Fecha</th>
                                         <th>Equipo</th>
                                         <th>Formato</th>
+                                        <th>ELO</th>
+                                        <th></th>
                                     </tr>
+                                    <?php
+                                        while($row=mysqli_fetch_array($resultado)){
+                                            $idPartido = $row["idagenda"];
+                                            $resultado1=$link->query("SELECT * FROM `equipo_partido` WHERE `idagenda` = '$idPartido'");
+                                            $row1=mysqli_fetch_array($resultado1);
+                                            $idEquipoTemp = $row1["idusuario"];
+                                            $resultado2=$link->query("SELECT * FROM `usuario` WHERE `idusuario` = '$idEquipoTemp'");
+                                            $row2=mysqli_fetch_array($resultado2);
+                                            if ($idEquipo != $idEquipoTemp) {
+                                                ?>
+                                                <tr>
+                                                <th><?php printf ("%s\n", $row["hora"]);?></th>
+                                                <th><?php printf ("%s\n", $row["fecha"]);?></th>
+                                                <th><?php printf ("%s\n", $row2["nombre_equipo"]);?></th>
+                                                <th><?php printf ("%s\n", $row["formato"]);?></th>
+                                                <th><?php printf ("%s\n", $row["elo"]);?></th>
+                                                <th><button id="aceptar" name="aceptar" class="btn btn-primary">Aceptar</button></th>
+                                                </tr>
+                                                <?php
+                                            }  
+                                        }
+                                    ?>
                                 </thead>
                             </table>
                             

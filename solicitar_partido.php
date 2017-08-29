@@ -57,6 +57,7 @@
         }
         else{
         $email=$row["email"];
+        $idEquipo=$row["idusuario"];
         }
     }
     ?>
@@ -65,7 +66,7 @@
 
     <?php
 
-      function registrarPartido(){
+      function registrarPartido($idEquipo){
 
         $fecha = $_POST["fecha"];
         $hora = $_POST["hora"];
@@ -74,6 +75,10 @@
         $formato = $_POST["formato"];
         $link = mysqli_connect("127.0.0.1","root","","db696349657");
         $link->query("INSERT INTO `agenda`(`hora`, `fecha`, `elo`, `formato`, `estado`, `cuenta_contacto`) VALUES ('$hora','$fecha','$elo','$formato','PENDIENTE','$cuenta_contacto')");
+        $resutlado_ultimoregistro = $link->query("SELECT * FROM `agenda` ORDER BY `idagenda` DESC LIMIT 1");
+        $row=mysqli_fetch_array($resutlado_ultimoregistro);
+        $idagenda=$row["idagenda"];
+        $link->query("INSERT INTO `equipo_partido`(`idusuario`, `idagenda`) VALUES ('$idEquipo','$idagenda')");
         //falta incluir el resultado
       }
 
@@ -142,7 +147,7 @@
 
                             <?php
                                 if(isset($_POST['aceptar'])){
-                                    registrarPartido();
+                                    registrarPartido($idEquipo);
                                     }
                             ?>
 
