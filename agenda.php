@@ -43,7 +43,7 @@
     //Control de Seguridad
     include("12e47baJKD93153mS0zBsD3sQVfC.php");
     if (empty($_GET['encrypt'])){
-         //header('Location: index.php'); 
+         header('Location: index.php'); 
               }
     else{
     $encript1=$_GET["encrypt"];
@@ -52,7 +52,7 @@
     $resultado=$link->query("SELECT * FROM `usuario` WHERE `email` = '$encript'");
     $row=mysqli_fetch_array($resultado);
         if(empty($row)){
-          // header('Location: index.php');
+           header('Location: index.php');
         }
         else{
         $email=$row["email"];
@@ -73,7 +73,7 @@
             <!-- /.navbar-header -->
 
             <div class="navbar-right" style="margin-right: 0">
-                <a class="navbar-brand">Bienvenido 
+                <a class="navbar-brand">Bienvenido
                 <?php printf ("%s\n", $row["nombre_equipo"]);?>
                 </a>
             </div>
@@ -86,18 +86,18 @@
                             <a href="agenda.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-calendar fa-fw"></i> Agenda<span class="fa arrow"></a>
                         </li>
                         <li>
-                            <a href="historial_partidos.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-user fa-fw"></i> Tus partidos<span class="fa arrow"></span></a>
+                            <a href="historial_partidos.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-user fa-fw"></i> Tus partidos<span class="fa arrow"></span></a>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="solicitar_partido.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-sign-in fa-fw"></i> Solicitar partido<span class="fa arrow"></span></a>
+                            <a href="solicitar_partido.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-sign-in fa-fw"></i> Solicitar partido<span class="fa arrow"></span></a>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="partido_disponible.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-calendar-o fa-fw"></i> Partidos disponibles<span class="fa arrow"></a>
+                            <a href="partido_disponible.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-calendar-o fa-fw"></i> Partidos disponibles<span class="fa arrow"></a>
                         </li>
                         <li>
-                            <a href="ajustes.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-wrench fa-fw"></i> Ajustes<span class="fa arrow"></span></a>
+                            <a href="ajustes.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-wrench fa-fw"></i> Ajustes<span class="fa arrow"></span></a>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>

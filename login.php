@@ -55,7 +55,7 @@
                             if ($row["verificado"] == 1) {
                                 $clave=$row["token"];
                                 $enlace=encriptar($usuario,$clave);
-                                header('Location: agenda.php?encrypt='.$enlace);
+                                header('Location: agenda.php?encrypt='.urlencode($enlace));
                             }
                             else{
                                 ?>

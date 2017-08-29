@@ -42,7 +42,7 @@
         	$Email=desencriptar($input,$Key);
         	return $Email; 
         }
-
+        return $input;
     }
 
 ?>

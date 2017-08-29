@@ -72,9 +72,9 @@
         $cuenta_contacto = $_POST["cuenta"];
         $elo = $_POST["elo"];
         $formato = $_POST["formato"];
-
+        $link = mysqli_connect("127.0.0.1","root","","db696349657");
         $link->query("INSERT INTO `agenda`(`hora`, `fecha`, `elo`, `formato`, `estado`, `cuenta_contacto`) VALUES ('$hora','$fecha','$elo','$formato','PENDIENTE','$cuenta_contacto')");
-
+        //falta incluir el resultado
       }
 
 
@@ -104,18 +104,22 @@
                             <a href="agenda.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-calendar fa-fw"></i> Agenda<span class="fa arrow"></a>
                         </li>
                         <li>
-                            <a href="historial_partidos.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-user fa-fw"></i> Tus partidos<span class="fa arrow"></span></a>
+                            <a href="historial_partidos.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-user fa-fw"></i> Tus partidos<span class="fa arrow"></span></a>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="solicitar_partido.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-sign-in fa-fw"></i> Solicitar partido<span class="fa arrow"></span></a>
+                            <a href="solicitar_partido.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-sign-in fa-fw"></i> Solicitar partido<span class="fa arrow"></span></a>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="partido_disponible.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-calendar-o fa-fw"></i> Partidos disponibles<span class="fa arrow"></a>
+                            <a href="partido_disponible.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-calendar-o fa-fw"></i> Partidos disponibles<span class="fa arrow"></a>
                         </li>
                         <li>
-                            <a href="ajustes.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-wrench fa-fw"></i> Ajustes<span class="fa arrow"></span></a>
+                            <a href="ajustes.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-wrench fa-fw"></i> Ajustes<span class="fa arrow"></span></a>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="index.php"><i class="fa fa-sign-out fa-fw"></i> Cerrar sesion<span class="fa arrow"></span></a>
                             <!-- /.nav-second-level -->
                         </li>
                     </ul>

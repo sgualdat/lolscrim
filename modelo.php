@@ -82,21 +82,25 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="panel_usuario.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-calendar fa-fw"></i> Agenda<span class="fa arrow"></a>
+                            <a href="agenda.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-calendar fa-fw"></i> Agenda<span class="fa arrow"></a>
                         </li>
                         <li>
-                            <a href="lista_carreras.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-user fa-fw"></i> Tus partidos<span class="fa arrow"></span></a>
+                            <a href="historial_partidos.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-user fa-fw"></i> Tus partidos<span class="fa arrow"></span></a>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="tienda_productos.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-sign-in fa-fw"></i> Solicitar partido<span class="fa arrow"></span></a>
+                            <a href="solicitar_partido.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-sign-in fa-fw"></i> Solicitar partido<span class="fa arrow"></span></a>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="cuotas_socio.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-calendar-o fa-fw"></i> Partidos disponibles<span class="fa arrow"></a>
+                            <a href="partido_disponible.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-calendar-o fa-fw"></i> Partidos disponibles<span class="fa arrow"></a>
                         </li>
                         <li>
-                            <a href="ajuste_usuario.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-wrench fa-fw"></i> Ajustes<span class="fa arrow"></span></a>
+                            <a href="ajustes.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-wrench fa-fw"></i> Ajustes<span class="fa arrow"></span></a>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="index.php"><i class="fa fa-sign-out fa-fw"></i> Cerrar sesion<span class="fa arrow"></span></a>
                             <!-- /.nav-second-level -->
                         </li>
                     </ul>
