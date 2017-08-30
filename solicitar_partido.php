@@ -106,7 +106,7 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="agenda.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-calendar fa-fw"></i> Agenda<span class="fa arrow"></a>
+                            <a href="agenda.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-calendar fa-fw"></i> Agenda<span class="fa arrow"></a>
                         </li>
                         <li>
                             <a href="historial_partidos.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-user fa-fw"></i> Tus partidos<span class="fa arrow"></span></a>

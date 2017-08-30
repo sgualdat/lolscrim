@@ -28,7 +28,7 @@
 
     <!-- Custom Fonts -->
     <link href="assets/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+    <link rel="shortcut icon" href="assets/images/logo3.png">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -83,7 +83,7 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="agenda.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-calendar fa-fw"></i> Agenda<span class="fa arrow"></a>
+                            <a href="agenda.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-calendar fa-fw"></i> Agenda<span class="fa arrow"></a>
                         </li>
                         <li>
                             <a href="historial_partidos.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-user fa-fw"></i> Tus partidos<span class="fa arrow"></span></a>
@@ -129,7 +129,7 @@
                         <div class="form-group">
                           <label class="col-md-4 control-label" for="nombre_equipo">Nombre del equipo</label>  
                           <div class="col-md-4">
-                          <input id="nombre_equipo" name="nombre_equipo" type="text" placeholder="" class="form-control input-md" required="">
+                          <input id="nombre_equipo" name="nombre_equipo" type="text" placeholder="" class="form-control input-md" required="" value="<?php echo $row["nombre_equipo"]?>">
                             
                           </div>
                         </div>
@@ -139,13 +139,13 @@
                           <label class="col-md-4 control-label" for="elo">Division del equipo</label>
                           <div class="col-md-4">
                             <select id="elo" name="elo" class="form-control">
-                              <option value="Bronce">Bronce</option>
-                              <option value="Plata">Plata</option>
-                              <option value="Oro">Oro</option>
-                              <option value="Platino">Platino</option>
-                              <option value="Diamante">Diamante</option>
-                              <option value="Master">Master</option>
-                              <option value="Challenger">Challenger</option>
+                              <option value="Bronce" <?php if($row["elo"]=="Bronce"){?> selected <?php } ?> >Bronce</option>
+                              <option value="Plata" <?php if($row["elo"]=="Plata"){?> selected <?php } ?> >Plata</option>
+                              <option value="Oro" <?php if($row["elo"]=="Oro"){?> selected <?php } ?> >Oro</option>
+                              <option value="Platino" <?php if($row["elo"]=="Platino"){?> selected <?php } ?> >Platino</option>
+                              <option value="Diamante" <?php if($row["elo"]=="Diamante"){?> selected <?php } ?> >Diamante</option>
+                              <option value="Master" <?php if($row["elo"]=="Master"){?> selected <?php } ?> >Master</option>
+                              <option value="Challenger" <?php if($row["elo"]=="Challenger"){?> selected <?php } ?> >Challenger</option>
                             </select>
                           </div>
                         </div>
@@ -154,7 +154,7 @@
                         <div class="form-group">
                           <label class="col-md-4 control-label" for="email">Email de contacto</label>  
                           <div class="col-md-4">
-                          <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
+                          <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="" value="<?php echo $row["email"]?>">
                             
                           </div>
                         </div>

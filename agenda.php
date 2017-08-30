@@ -28,6 +28,7 @@
 
     <!-- Custom Fonts -->
     <link href="assets/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="assets/images/logo3.png">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,6 +57,7 @@
         }
         else{
         $email=$row["email"];
+        $idEquipo=$row["idusuario"];
         }
     }
     ?>
@@ -83,7 +85,7 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="agenda.php?encrypt=<?php echo $encript1;?>"><i class="fa fa-calendar fa-fw"></i> Agenda<span class="fa arrow"></a>
+                            <a href="agenda.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-calendar fa-fw"></i> Agenda<span class="fa arrow"></a>
                         </li>
                         <li>
                             <a href="historial_partidos.php?encrypt=<?php echo urlencode($encript1);?>"><i class="fa fa-user fa-fw"></i> Tus partidos<span class="fa arrow"></span></a>
@@ -138,15 +140,44 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body">
 
+                            <?php
+
+                             $link = mysqli_connect("127.0.0.1","root","","db696349657");
+                             $resultado=$link->query("SELECT * FROM `agenda` WHERE `estado` = 'ACEPTADO'");
+
+                            ?>
+
                             <table class="table table-striped custab">
                                 <thead>
-
                                     <tr>
                                         <th>Hora</th>
                                         <th>Fecha</th>
                                         <th>Equipo</th>
                                         <th>Formato</th>
+                                        <th>ELO</th>
+                                        <th>Estado</th>
+                                        <th></th>
                                     </tr>
+                                    <?php
+                                        while($row=mysqli_fetch_array($resultado)){
+                                                $idPartido = $row["idagenda"];
+                                                $resultado1=$link->query("SELECT * FROM `equipo_partido` WHERE `idagenda` = '$idPartido' AND `idusuario` != '$idEquipo'");
+                                                $row1=mysqli_fetch_array($resultado1);
+                                                $idEquipoTemp = $row1["idusuario"];
+                                                $resultado2=$link->query("SELECT * FROM `usuario` WHERE `idusuario` = '$idEquipoTemp'");
+                                                $row2=mysqli_fetch_array($resultado2);
+                                                ?>
+                                                <tr>
+                                                <th><?php printf ("%s\n", $row["hora"]);?></th>
+                                                <th><?php printf ("%s\n", $row["fecha"]);?></th>
+                                                <th><?php printf ("%s\n", $row2["nombre_equipo"]);?></th>
+                                                <th><?php printf ("%s\n", $row["formato"]);?></th>
+                                                <th><?php printf ("%s\n", $row["elo"]);?></th>
+                                                <th><?php printf ("%s\n", $row["estado"]);?></th>
+                                                </tr>
+                                                <?php       
+                                        }
+                                    ?>
                                 </thead>
                             </table>
                             
