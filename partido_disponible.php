@@ -64,6 +64,16 @@
 
 <body>
 
+    <?php
+
+        function aceptarPartido($idagenda, $idEquipo){
+            $link = mysqli_connect("127.0.0.1","root","","db696349657");
+            $link->query("UPDATE `agenda` SET `estado`='ACEPTADO' WHERE `idagenda`='$idagenda'");
+            $link->query("INSERT INTO `equipo_partido`(`idusuario`, `idagenda`) VALUES ('$idEquipo','$idagenda')");
+        }
+
+    ?>
+
 
     <div id="wrapper">
 
@@ -162,7 +172,7 @@
                                                 <th><?php printf ("%s\n", $row2["nombre_equipo"]);?></th>
                                                 <th><?php printf ("%s\n", $row["formato"]);?></th>
                                                 <th><?php printf ("%s\n", $row["elo"]);?></th>
-                                                <th><button id="aceptar" name="aceptar" class="btn btn-primary">Aceptar</button></th>
+                                                <th><form method="POST" action=""> <?php if(isset($_POST['aceptar'])){ aceptarPartido($idPartido, $idEquipo);} ?> <button id="aceptar" name="aceptar" class="btn btn-primary">Aceptar</button></form></th>
                                                 </tr>
                                                 <?php
                                             }  

@@ -137,7 +137,8 @@
                                         <th>Fecha</th>
                                         <th>Equipo</th>
                                         <th>Formato</th>
-                                        <th>ELO</th>
+                                        <th>ELO(Partido)</th>
+                                        <th>Codigo de Torneo</th>
                                         <th>Estado</th>
                                         <th></th>
                                     </tr>
@@ -157,6 +158,7 @@
                                                 <th><?php printf ("%s\n", $row2["nombre_equipo"]);?></th>
                                                 <th><?php printf ("%s\n", $row["formato"]);?></th>
                                                 <th><?php printf ("%s\n", $row["elo"]);?></th>
+                                                <th><?php printf ("%s\n", $row["codigo_torneo"]);?></th>
                                                 <th><?php printf ("%s\n", $row["estado"]);?></th>
                                                 <th></th>
                                                 </tr>
@@ -170,6 +172,7 @@
                                                 <th><p>Sin equipo</p></th>
                                                 <th><?php printf ("%s\n", $row["formato"]);?></th>
                                                 <th><?php printf ("%s\n", $row["elo"]);?></th>
+                                                <th><p>Sin equipo</p></th>
                                                 <th><?php printf ("%s\n", $row["estado"]);?></th>
                                                 <th><button id="cancelar" name="cancelar" class="btn btn-primary">Cancelar</button></th>
                                                 </tr>

@@ -154,11 +154,33 @@
                             <form class="form-horizontal" method="POST" action="">
                             <fieldset>
 
+                            <?php
+
+                            $fechahoy = getdate();
+                            if ($fechahoy["mon"]<=9) {
+                              if ($fechahoy["mday"]<=9) {
+                                $hoy = $fechahoy["year"]."-0".$fechahoy["mon"]."-0".$fechahoy["mday"];
+                              }
+                              else{
+                                $hoy = $fechahoy["year"]."-0".$fechahoy["mon"]."-".$fechahoy["mday"];
+                              }
+                            }
+                            else{
+                              if ($fechahoy["mday"]<=9) {
+                                $hoy = $fechahoy["year"]."-".$fechahoy["mon"]."-0".$fechahoy["mday"];
+                              }
+                              else{
+                                $hoy = $fechahoy["year"]."-".$fechahoy["mon"]."-".$fechahoy["mday"];
+                              }
+                            }
+
+                            ?>
+
                             <!-- Text input-->
                             <div class="form-group">
                               <label class="col-md-4 control-label" for="fecha">Fecha</label>  
                               <div class="col-md-4">
-                              <input id="fecha" name="fecha" type="date" placeholder="" class="form-control input-md" required="">
+                              <input id="fecha" name="fecha" type="date" placeholder="" class="form-control input-md" required="" min="<?php echo $hoy;?>">
                                 
                               </div>
                             </div>
