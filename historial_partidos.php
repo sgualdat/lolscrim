@@ -145,39 +145,42 @@
                                     <?php
                                         while($row=mysqli_fetch_array($resultado)){
                                             $idPartido = $row["idagenda"];
-                                            if ($row["estado"] != 'PENDIENTE') {
-                                                $resultado1=$link->query("SELECT * FROM `equipo_partido` WHERE `idagenda` = '$idPartido' AND `idusuario` != '$idEquipo'");
-                                                $row1=mysqli_fetch_array($resultado1);
-                                                $idEquipoTemp = $row1["idusuario"];
-                                                $resultado2=$link->query("SELECT * FROM `usuario` WHERE `idusuario` = '$idEquipoTemp'");
-                                                $row2=mysqli_fetch_array($resultado2);
-                                                ?>
-                                                <tr>
-                                                <th><?php printf ("%s\n", $row["hora"]);?></th>
-                                                <th><?php printf ("%s\n", $row["fecha"]);?></th>
-                                                <th><?php printf ("%s\n", $row2["nombre_equipo"]);?></th>
-                                                <th><?php printf ("%s\n", $row["formato"]);?></th>
-                                                <th><?php printf ("%s\n", $row["elo"]);?></th>
-                                                <th><?php printf ("%s\n", $row["codigo_torneo"]);?></th>
-                                                <th><?php printf ("%s\n", $row["estado"]);?></th>
-                                                <th></th>
-                                                </tr>
-                                                <?php 
-                                            }
-                                            else{
-                                               ?>
-                                                <tr>
-                                                <th><?php printf ("%s\n", $row["hora"]);?></th>
-                                                <th><?php printf ("%s\n", $row["fecha"]);?></th>
-                                                <th><p>Sin equipo</p></th>
-                                                <th><?php printf ("%s\n", $row["formato"]);?></th>
-                                                <th><?php printf ("%s\n", $row["elo"]);?></th>
-                                                <th><p>Sin equipo</p></th>
-                                                <th><?php printf ("%s\n", $row["estado"]);?></th>
-                                                <th><button id="cancelar" name="cancelar" class="btn btn-primary">Cancelar</button></th>
-                                                </tr>
-                                                <?php  
-                                            }    
+                                            $resultado1=$link->query("SELECT * FROM `equipo_partido` WHERE `idagenda` = '$idPartido' AND `idusuario` = '$idEquipo'");
+                                            $verficarpartido = $resultado1->num_rows;
+                                                if ($verficarpartido == '1') {
+                                                    if ($row["estado"] != 'PENDIENTE') {
+                                                    $row1=mysqli_fetch_array($resultado1);
+                                                    $idEquipoTemp = $row1["idusuario"];
+                                                    $resultado2=$link->query("SELECT * FROM `usuario` WHERE `idusuario` = '$idEquipoTemp'");
+                                                    $row2=mysqli_fetch_array($resultado2);
+                                                    ?>
+                                                    <tr>
+                                                    <th><?php printf ("%s\n", $row["hora"]);?></th>
+                                                    <th><?php printf ("%s\n", $row["fecha"]);?></th>
+                                                    <th><?php printf ("%s\n", $row2["nombre_equipo"]);?></th>
+                                                    <th><?php printf ("%s\n", $row["formato"]);?></th>
+                                                    <th><?php printf ("%s\n", $row["elo"]);?></th>
+                                                    <th><?php printf ("%s\n", $row["codigo_torneo"]);?></th>
+                                                    <th><?php printf ("%s\n", $row["estado"]);?></th>
+                                                    <th></th>
+                                                    </tr>
+                                                    <?php 
+                                                }
+                                                else{
+                                                   ?>
+                                                    <tr>
+                                                    <th><?php printf ("%s\n", $row["hora"]);?></th>
+                                                    <th><?php printf ("%s\n", $row["fecha"]);?></th>
+                                                    <th><p>Sin equipo</p></th>
+                                                    <th><?php printf ("%s\n", $row["formato"]);?></th>
+                                                    <th><?php printf ("%s\n", $row["elo"]);?></th>
+                                                    <th><p>Sin equipo</p></th>
+                                                    <th><?php printf ("%s\n", $row["estado"]);?></th>
+                                                    <th><button id="cancelar" name="cancelar" class="btn btn-primary">Cancelar</button></th>
+                                                    </tr>
+                                                    <?php  
+                                                }
+                                            }     
                                         }
                                     ?>
                                 </thead>
