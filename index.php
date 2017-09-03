@@ -120,7 +120,7 @@
 								
 								<li><a href="#about" class="scroll-to" data-anchor-offset="0">¿Que es OnlyScrim?</a></li>
 								<li><a href="#funcionamiento" class="scroll-to" data-anchor-offset="0">¿Como funciona?</a></li>
-								<li><a href="#modal-registro" data-toggle="modal" data-anchor-offset="0">Registrarse</a></li>
+								<!--<li><a href="#modal-registro" data-toggle="modal" data-anchor-offset="0">Registrarse</a></li>-->
 								<li><a href="login.php" data-anchor-offset="0">Acceso</a></li>
 								<li><a href="#contacto" class="scroll-to" data-anchor-offset="0">Contacto</a></li>
 								
@@ -318,7 +318,7 @@
 								
 								<div class="col-sm-6 inner-top-xs inner-left-xs">
 									<h2>¿Que es OnlyScrim?</h2>
-									<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut reporemni aut labor. Laceaque quiae sitiorem rest non restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta oreprerum tibusam. Eumenis et consent accullignis dentibea autem inisita posae volor conecus resto explabo.</p>
+									<p>Mejora la gestion de tus entrenamientos buscando scrims contra otros equipos de manera rapida y sencilla desde una unica plataforma totalmente gratuita.</p>
 								</div><!-- /.col -->
 								
 							</div><!-- /.row -->
@@ -340,8 +340,7 @@
 					<div class="row">
 						<div class="col-md-8 col-sm-9">
 							<header>
-								<h1>Gestiona tus entrenamientos</h1>
-								<p>Comprueba las estadisticas despues de cada partido y prepara las competiciones para llegar al mas alto nivel</p>
+								<h2>Comprueba las estadisticas despues de cada partido y prepara las competiciones para llegar al mas alto nivel</h2>
 							</header>
 							<!--<a href="#modal-registro" data-toggle="modal" class="btn btn-large">Registrate</a>-->
 						</div><!-- /.col -->
@@ -382,12 +381,12 @@
 										<div class="row">
 											
 											<div class="col-md-5 col-md-push-5 col-md-offset-1 col-sm-6 col-sm-push-6 inner-left-xs">
-												<figure><img src="assets/images/art/product04.jpg" alt=""></figure>
+												<figure><img src="assets/images/formularioregistro.png" alt=""></figure>
 											</div><!-- /.col -->
 											
 											<div class="col-md-5 col-md-pull-5 col-sm-6 col-sm-pull-6 inner-top-xs inner-right-xs">
-												<h3>Registrate</h3>
-												<p>Rellena el formulario</p>
+												<h2>Registrate</h2>
+												<h3>Rellena el formulario con tus datos para poder acceder a la plataforma.</h3>
 											</div><!-- /.col -->
 											
 										</div><!-- /.row -->
@@ -397,12 +396,12 @@
 										<div class="row">
 											
 											<div class="col-md-5 col-md-offset-1 col-sm-6 inner-right-xs">
-												<figure><img src="assets/images/art/product05.jpg" alt=""></figure>
+												<figure><img src="assets/images/buscarpartido.png" alt=""></figure>
 											</div><!-- /.col -->
 											
 											<div class="col-md-5 col-sm-6 inner-top-xs inner-left-xs">
-												<h3>Busca un partido</h3>
-												<p>Magnis modipsae que lib voloratati andigen daepedor quiate ut reporemni aut labor. Laceaque quiae sitiorem ut restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent accullignis lomnus.</p>
+												<h2>Busca un partido</h2>
+												<h3>Propon tu un partido o selecciona entre las propuestas de los otros equipos.</h3>
 											</div><!-- /.col -->
 											
 										</div><!-- /.row -->
@@ -411,18 +410,13 @@
 									<div class="tab-content" id="tab-3">
 										<div class="row">
 											
-											<div class="col-md-4 col-md-push-3 col-md-offset-1 col-sm-6 inner-left-xs inner-right-xs">
-												<figure><img src="assets/images/art/product06.jpg" alt=""></figure>
+											<div class="col-md-5 col-md-push-5 col-md-offset-1 col-sm-6 col-sm-push-6 inner-left-xs">
+												<figure><img src="assets/images/codigotorneo.png" alt=""></figure>
 											</div><!-- /.col -->
 											
-											<div class="col-md-3 col-md-pull-4 col-sm-6 inner-top-xs">
-												<h3>Juega</h3>
-												<p>Magnis modipsae lib voloratati andigen daepedor quiate aut labor. Laceaque quiae sitiorem resti est lore tumquam core posae volor uso remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent it accullignis orum lomnus.</p>
-											</div><!-- /.col -->
-											
-											<div class="col-md-3 col-sm-6 inner-top-xs">
-												<h3>User interface</h3>
-												<p>Magnis modipsae lib voloratati andigen daepedor quiate aut labor. Laceaque quiae sitiorem resti est lore tumquam core posae volor uso remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent it accullignis orum lomnus.</p>
+											<div class="col-md-5 col-md-pull-5 col-sm-6 col-sm-pull-6 inner-top-xs inner-right-xs">
+												<h2>Juega</h2>
+												<h3>Introduce el codigo de torneo en el cliente de League of Legends y accederas directamente a la sala de partida.</h3>
 											</div><!-- /.col -->
 											
 										</div><!-- /.row -->
